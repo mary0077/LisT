@@ -1,0 +1,25 @@
+.header {
+    background-color: var(--bg-primary-color);
+    color: var(--text-primary-color);
+    text-align: center;
+    padding: 2rem; 
+}
+
+.header_logo, .header_theme {
+    font-size: var(--medium-font-size);
+}
+
+.header_theme {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
