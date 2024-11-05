@@ -1,11 +1,51 @@
+/* App.module.css */
+
+/* ===================== Estilos para o Container Principal ===================== */
 .main {
-    min-height: 60vh;
-    text-align: center;
-    padding: 2em;
-    background-color: var(--bg-primary-color);
-    color: var(--text-second-color);
+    min-height: 60vh; /* Altura mínima */
+    text-align: center; /* Centralização do texto */
+    padding: 2em; /* Espaçamento interno */
+    background-color: var(--bg-primary-color); /* Fundo usando variável */
+    color: var(--text-second-color); /* Cor do texto usando variável */
+    display: flex; /* Exibição em flex */
+    justify-content: space-around; /* Alinhamento dos filhos */
 }
 
+/* ===================== Estilos para Títulos ===================== */
 .main h2 {
-    margin-bottom: .8em;
+    margin-bottom: .8em; /* Margem inferior */
+    font-size: var(--medium-font-size); /* Usando variável para tamanho da fonte */
+    border-bottom: 2px solid var(--border-primary-color); /* Borda inferior */
+    padding-bottom: 5px; /* Espaçamento interno */
+    color: #333; 
+}
+
+/* ===================== Estilos para os Containers de Tarefas ===================== */
+.taskFormContainer,
+.taskListContainer {
+    background-color: #ffffff; /* Fundo branco para contraste */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve para destacar */
+    color: #333; /* Cor do texto preta para legibilidade */
+}
+
+/* ===================== Estilos para Botões ===================== */
+button {
+    background-color: var(--bg-primary-btn-color); /* Usando variável para cor do botão */
+    color: var(--text-second-btn-color); /* Usando variável para cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+button:hover {
+    background-color: var(--bg-second-btn-color); /* Cor ao passar o cursor */
+}
+
+/* ===================== Classes CSS Reutilizáveis ===================== */
+.hide {
+    display: none !important; /* Esconder elementos */
 }

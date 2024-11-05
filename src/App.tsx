@@ -63,26 +63,27 @@ function App() {
         />
         <Header />
         <main className={styles.main}>
-          <div>
-            <h2>O que você vai fazer?</h2>
-            <TaskForm 
-              btnText="Criar Tarefa" 
-              taskList={taskList}
-              setTaskList={setTaskList}
-            />
-          </div>
-          <div>
-            <h2>Suas Tarefas:</h2>
-            <TaskList 
-              taskList={taskList}
-              handleDelete={deleteTask}
-              handleEdit={editTask}
-            />
-          </div>
-        </main>
+  <div className={styles.taskFormContainer}>
+    <h2>Quais são os Planos?</h2>
+    <TaskForm 
+      btnText="Criar Tarefa" 
+      taskList={taskList}
+      setTaskList={setTaskList}
+    />
+  </div>
+  <div className={styles.taskListContainer}>
+    <h2>Suas Atividades:</h2>
+    <TaskList 
+      taskList={taskList}
+      handleDelete={deleteTask}
+      handleEdit={editTask}
+    />
+  </div>
+</main>
+
         <Footer />
       </div>
   );
-};
+}
 
 export default App;
